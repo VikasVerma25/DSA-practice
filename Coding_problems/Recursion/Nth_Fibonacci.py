@@ -16,7 +16,6 @@ def getNthFib(n):
     # base case (return 0 and 1 for n  equal to 1 and 2)
     if n == 1 or n == 2:
         return n-1
-    # elif n < 0:
     # nth element is sum of (n-1)th and (n-2)th elements
     else:
         return getNthFib(n-1) + getNthFib(n-2)
