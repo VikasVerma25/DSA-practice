@@ -11,7 +11,7 @@
                                  /    \           /     \
                              [1,2]     [1]      [2]      []       add 3 or don't add
                              /  \      / \      /  \     / \
- powerset =>          [1,2,3] [1,2] [1,3] [1] [2,3] [2] [3] []    O(2^n) time   
+ powerset =>          [1,2,3] [1,2] [1,3] [1] [2,3] [2] [3] []    O(n*2^n) time   
 '''
 
 def powerset(myset, anslist = [], subset = [], i = 0):
