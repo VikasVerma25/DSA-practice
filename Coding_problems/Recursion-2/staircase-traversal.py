@@ -34,17 +34,22 @@ print(staircase_ways(4, 2))
 
 
 # better way without recursion
+# dynamic programming
 def staircase_ways(height, maxsteps):
+    # base case
     if height == 0:
         return 1
     no_ways = [1]
+    # for a height of staircase
     for i in range(1, height+1):
         total = 0
+        # for all allowed steps
         for j in range(1, maxsteps+1):
             if i-j >= 0:
                 total += no_ways[i-j]
+        # add the number of ways to the list (remembering)
         no_ways.append(total)
-
+    # return number of ways for given height
     return no_ways[height]
 
 print(staircase_ways(4, 2))
