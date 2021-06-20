@@ -21,7 +21,7 @@ def product_sum(special_array, multiplyer=1):
         # if item is not a integer object then change multiplyer and do recursion
         if not isinstance(item, int):            
             product_sum(item, multiplyer*(multiplyer+1))
-        # if it is integer then add to result after multiplying with current multiplayer
+        # if it is integer then add to result after multiplying with current multiplyer
         else:
             result += (multiplyer*item)
     return result
